@@ -1,0 +1,36 @@
+{
+    "name": "acplo/acploui",
+    "description": "AcploUi provides some UI utility classes your ZF2 application using Jquery2, Bootstrap3, Chosen, etc",
+    "require": {
+        "php": ">=5.4.0",
+        "zendframework/zendframework": ">=2.3.2,<3.0.0",
+        "rwoverdijk/assetmanager": "~1.4"
+    },
+    "require-dev": {
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "suggest": {
+        "acplo/acplobase": "acplo/acplobase for some abstract classes to speed development ",
+        "acplo/acplolog": "acplo/acplolog for logging"
+    },
+    "authors": [
+        {
+            "name": "Abel Lopes",
+            "email": "abel@abellopes.eti.br",
+            "homepage": "http://www.abellopes.eti.br"
+        }
+    ],
+    "keywords": ["acplo", "ui", "module", "zf2"],
+    "autoload": {
+        "psr-4": {
+            "AcploUi\\": "src/"
+        },
+        "psr-0": {
+            "AcploUi\\": "src/"
+        },
+        "classmap": ["./"]
+    },
+    "license": "BSD-3-Clause",
+    "type": "library",
+    "homepage": "http://github.com/Acplo/AcploUi"
+}
