@@ -3,11 +3,11 @@
  * Navigation view helper
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  */
-namespace LosUi\View\Helper;
+namespace AcploUi\View\Helper;
 
 use Zend\View\Helper\Navigation as ZendNavigation;
 
@@ -15,17 +15,17 @@ use Zend\View\Helper\Navigation as ZendNavigation;
  * Navigation view helper
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  */
 class Navigation extends ZendNavigation
 {
     protected $defaultProxy = 'menu';
 
     protected $defaultHelpers = [
-        'breadcrumbs' => 'LosUi\View\Helper\Navigation\Breadcrumbs',
-        'menu'        => 'LosUi\View\Helper\Navigation\Menu',
+        'breadcrumbs' => 'AcploUi\View\Helper\Navigation\Breadcrumbs',
+        'menu'        => 'AcploUi\View\Helper\Navigation\Menu',
     ];
 
     public function getPluginManager()

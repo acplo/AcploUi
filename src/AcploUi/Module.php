@@ -3,11 +3,11 @@
  * Module file
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  */
-namespace LosUi;
+namespace AcploUi;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 
@@ -15,9 +15,9 @@ use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
  * Module class
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  */
 class Module implements AutoloaderProviderInterface
 {

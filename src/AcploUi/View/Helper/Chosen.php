@@ -3,12 +3,12 @@
  * Chosen view helper
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  * @link       http://harvesthq.github.io/chosen/
  */
-namespace LosUi\View\Helper;
+namespace AcploUi\View\Helper;
 
 use Zend\Form\View\Helper\AbstractHelper;
 
@@ -16,9 +16,9 @@ use Zend\Form\View\Helper\AbstractHelper;
  * Chosen view helper
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  * @link       http://harvesthq.github.io/chosen/
  */
 class Chosen extends AbstractHelper
@@ -29,7 +29,7 @@ class Chosen extends AbstractHelper
      * @param  string                           $element
      * @param  array                            $options
      * @param  boolean                          $includeLibs
-     * @return string|\LosUi\View\Helper\Chosen
+     * @return string|\AcploUi\View\Helper\Chosen
      */
     public function __invoke($element = 'select', $options = [], $includeLibs = true, $formatForBootstrap = false)
     {

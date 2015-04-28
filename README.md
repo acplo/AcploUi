@@ -1,5 +1,5 @@
-# LosUI 
-[![Build Status](https://travis-ci.org/Acplo/LosUi.svg?branch=master)](https://travis-ci.org/Acplo/LosUi) [![Latest Stable Version](https://poser.pugx.org/acplo/acploui/v/stable.svg)](https://packagist.org/packages/acplo/acploui) [![Total Downloads](https://poser.pugx.org/acplo/acploui/downloads.svg)](https://packagist.org/packages/acplo/acploui) [![Coverage Status](https://coveralls.io/repos/Acplo/LosUi/badge.svg)](https://coveralls.io/r/Acplo/LosUi) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Acplo/LosUi/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Acplo/LosUi/?branch=master) [![SensioLabs Insight](https://img.shields.io/sensiolabs/i/bab31378-77d2-46b3-94df-976c60ed2fe6.svg?style=flat)](https://insight.sensiolabs.com/projects/bab31378-77d2-46b3-94df-976c60ed2fe6) [![Dependency Status](https://www.versioneye.com/user/projects/54da836cc1bbbd5f82000357/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54da836cc1bbbd5f82000357) [![Dependency Status](https://www.versioneye.com/user/projects/54da837ec1bbbd5f8200035e/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54da837ec1bbbd5f8200035e)
+# AcploUi 
+[![Build Status](https://travis-ci.org/Acplo/AcploUi.svg?branch=master)](https://travis-ci.org/Acplo/AcploUi) [![Latest Stable Version](https://poser.pugx.org/acplo/acploui/v/stable.svg)](https://packagist.org/packages/acplo/acploui) [![Total Downloads](https://poser.pugx.org/acplo/acploui/downloads.svg)](https://packagist.org/packages/acplo/acploui) [![Coverage Status](https://coveralls.io/repos/Acplo/AcploUi/badge.svg)](https://coveralls.io/r/Acplo/AcploUi) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Acplo/AcploUi/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Acplo/AcploUi/?branch=master) [![SensioLabs Insight](https://img.shields.io/sensiolabs/i/bab31378-77d2-46b3-94df-976c60ed2fe6.svg?style=flat)](https://insight.sensiolabs.com/projects/bab31378-77d2-46b3-94df-976c60ed2fe6) [![Dependency Status](https://www.versioneye.com/user/projects/54da836cc1bbbd5f82000357/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54da836cc1bbbd5f82000357) [![Dependency Status](https://www.versioneye.com/user/projects/54da837ec1bbbd5f8200035e/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54da837ec1bbbd5f8200035e)
 
 
 ## Introduction
@@ -38,11 +38,11 @@ For composer documentation, please refer to [getcomposer.org](http://getcomposer
      }
      ```
   3. Run `php composer.phar install`
-  4. Open `my/project/directory/config/application.config.php` and add `LosUi` to your `modules`
+  4. Open `my/project/directory/config/application.config.php` and add `AcploUi` to your `modules`
      
 ### Installation without composer
 
-  1. Clone this module [LosUi](http://github.com/Acplo/LosUi) to your vendor directory
+  1. Clone this module [AcploUi](http://github.com/Acplo/AcploUi) to your vendor directory
   2. Enable it in your config/application.config.php like the step 4 in the previous section.
   
 ## Usage
@@ -431,7 +431,7 @@ There is a new Page type that enable you to add a divider to the menu helper:
                             'route' => 'client/edit',
                         ],
                         [
-                    		'type' => 'LosUi\Navigation\Page\Divider'
+                    		'type' => 'AcploUi\Navigation\Page\Divider'
                  		],
                   		[
                             'label' => 'Remove Client',

@@ -3,11 +3,11 @@
  * Head Link view helper, adding the necessary libs or cdns
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  */
-namespace LosUi\View\Helper;
+namespace AcploUi\View\Helper;
 
 use Zend\View\Helper\HeadLink as ZfHeadLink;
 
@@ -33,9 +33,9 @@ use Zend\View\Helper\HeadLink as ZfHeadLink;
  * @method HeadLink setAlternate($href, $type, $title, $extras = array())
  *
  * @author Abel Lopes <abel@abellpes.eti.br>
- * @category LosUi
- * @license https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link http://github.com/Acplo/LosUi
+ * @category AcploUi
+ * @license https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link http://github.com/Acplo/AcploUi
  */
 class HeadLink extends ZfHeadLink
 {

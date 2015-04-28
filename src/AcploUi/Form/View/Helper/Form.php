@@ -5,12 +5,12 @@
  * This view helper overrides the default ZF2 helper to use the LosFormRow
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  * @link       http://getbootstrap.com/css/#forms
  */
-namespace LosUi\Form\View\Helper;
+namespace AcploUi\Form\View\Helper;
 
 use Zend\Form\FormInterface;
 use Zend\Form\FieldsetInterface;
@@ -25,9 +25,9 @@ use Zend\Form\Element\Submit;
  * This view helper overrides the default ZF2 helper to use the LosFormRow
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  * @link       http://getbootstrap.com/css/#forms
  */
 class Form extends ZfFormHelper

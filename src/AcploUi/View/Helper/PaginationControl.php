@@ -5,12 +5,12 @@
  * Long description for file (if any)...
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  * @link       http://getbootstrap.com/components/#pagination
  */
-namespace LosUi\View\Helper;
+namespace AcploUi\View\Helper;
 
 use Zend\View\Helper\PaginationControl as ZfPaginationControl;
 use Zend\Paginator;
@@ -21,9 +21,9 @@ use Zend\Paginator;
  * Long description for file (if any)...
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  * @link       http://getbootstrap.com/components/#pagination
  */
 class PaginationControl extends ZfPaginationControl

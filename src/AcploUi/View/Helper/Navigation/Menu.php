@@ -3,27 +3,27 @@
  * Menu Navigation view helper styled for Bootstrap 3
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  * @link       http://getbootstrap.com/components/#navbar-default
  */
-namespace LosUi\View\Helper\Navigation;
+namespace AcploUi\View\Helper\Navigation;
 
 use RecursiveIteratorIterator;
 use Zend\View\Helper\Navigation\Menu as ZendMenu;
 use Zend\Navigation\AbstractContainer;
 use Zend\Navigation\Page\AbstractPage;
 use Zend\View;
-use LosUi\Navigation\Page\Divider;
+use AcploUi\Navigation\Page\Divider;
 
 /**
  * Menu Navigation view helper styled for Bootstrap 3
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  * @link       http://getbootstrap.com/components/#navbar-default
  * @codeCoverageIgnore
  */

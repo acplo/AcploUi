@@ -1,5 +1,5 @@
 <?php
-namespace LosUi\View\Helper;
+namespace AcploUi\View\Helper;
 
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;

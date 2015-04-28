@@ -3,12 +3,12 @@
  * Button view helper styled for Bootstrap 3
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  * @link       http://getbootstrap.com/css/#buttons
  */
-namespace LosUi\View\Helper;
+namespace AcploUi\View\Helper;
 
 use Zend\Form\View\Helper\AbstractHelper;
 
@@ -16,9 +16,9 @@ use Zend\Form\View\Helper\AbstractHelper;
  * Button view helper styled for Bootstrap 3
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  * @link       http://getbootstrap.com/css/#buttons
  */
 class Button extends AbstractHelper

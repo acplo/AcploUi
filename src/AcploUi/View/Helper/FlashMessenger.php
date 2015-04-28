@@ -3,11 +3,11 @@
  * FlashMessenger view helper styled for Bootstrap 3
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  */
-namespace LosUi\View\Helper;
+namespace AcploUi\View\Helper;
 
 use Zend\Mvc\Controller\Plugin\FlashMessenger as PluginFlashMessenger;
 use Zend\View\Helper\FlashMessenger as ZfFlashMessenger;
@@ -16,9 +16,9 @@ use Zend\View\Helper\FlashMessenger as ZfFlashMessenger;
  * FlashMessenger view helper styled for Bootstrap 3
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  */
 class FlashMessenger extends ZfFlashMessenger
 {

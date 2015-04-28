@@ -5,13 +5,13 @@
  * Can be used for Gltphicon and FontAwesome
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  * @link       http://fontawesome.io
  * @link       http://getbootstrap.com/components/#glyphicons
  */
-namespace LosUi\View\Helper;
+namespace AcploUi\View\Helper;
 
 use Zend\View\Helper\AbstractHelper;
 use Zend\Filter\FilterChain;
@@ -24,9 +24,9 @@ use Zend\Filter\StringToLower;
  * Can be used for Gltphicon and FontAwesome
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
- * @category   LosUi
- * @license    https://github.com/Acplo/LosUi/blob/master/LICENSE BSD-3 License
- * @link       http://github.com/Acplo/LosUi
+ * @category   AcploUi
+ * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
+ * @link       http://github.com/Acplo/AcploUi
  * @link       http://fontawesome.io
  * @link       http://getbootstrap.com/components/#glyphicons
  */
