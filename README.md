@@ -288,7 +288,7 @@ To better style checkboxes and radios, add the following to your stylesheet:
 }
 ```
 
-There is a LosFormRow view helper that prints just a row. It will add all necessary classes, including alerts for form errors.
+There is a AcploFormRow view helper that prints just a row. It will add all necessary classes, including alerts for form errors.
 ```php
 <?= $this->acploFormRow($form->get('password') ?>
 ```

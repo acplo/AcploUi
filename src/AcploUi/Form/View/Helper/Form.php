@@ -2,7 +2,7 @@
 /**
  * Form View Helper
  *
- * This view helper overrides the default ZF2 helper to use the LosFormRow
+ * This view helper overrides the default ZF2 helper to use the AcploFormRow
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
  * @category   AcploUi
@@ -22,7 +22,7 @@ use Zend\Form\Element\Submit;
  *
  * Form View Helper
  *
- * This view helper overrides the default ZF2 helper to use the LosFormRow
+ * This view helper overrides the default ZF2 helper to use the AcploFormRow
  *
  * @author     Abel Lopes <abel@abellpes.eti.br>
  * @category   AcploUi
