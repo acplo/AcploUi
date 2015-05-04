@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Head Script view helper adding the necessary libs or cdns
  *
@@ -7,6 +8,7 @@
  * @license    https://github.com/Acplo/AcploUi/blob/master/LICENSE BSD-3 License
  * @link       http://github.com/Acplo/AcploUi
  */
+
 namespace AcploUi\View\Helper;
 
 use Zend\View\Helper\HeadScript as ZfHeadScript;
@@ -41,9 +43,9 @@ use Zend\View\Helper\HeadScript as ZfHeadScript;
  */
 class HeadScript extends ZfHeadScript
 {
-    const VERSION_JQUERY = "2.1.3";
 
-    const VERSION_BOOTSTRAP = "3.3.4";
+    const VERSION_JQUERY = "2.1.3";
+    const VERSION_BOOTSTRAP = "3.0.3";
 
     /**
      * @param array  $matches
@@ -52,45 +54,58 @@ class HeadScript extends ZfHeadScript
      */
     private function callWithCdn($matches, $basePath, $args)
     {
-        $action = $matches['action'];
-        $mode = $matches['mode'];
+	$action = $matches['action'];
+	$mode = $matches['mode'];
 
-        $action .= "File";
+	$action .= "File";
 
-        $useCdn = false;
-        $version = false;
-        $isMin = true;
+	$useCdn = false;
+	$version = false;
+	$isMin = true;
 
-        if (isset($args[0]) && is_bool($args[0])) {
-            $useCdn = $args[0];
-        } elseif (isset($args[0])) {
-            $version = $args[0];
-        }
+	if (isset($args[0]) && is_bool($args[0]))
+	{
+	    $useCdn = $args[0];
+	}
+	elseif (isset($args[0]))
+	{
+	    $version = $args[0];
+	}
 
-        if (isset($args[1]) && is_bool($args[1])) {
-            $isMin = $args[1];
-        }
+	if (isset($args[1]) && is_bool($args[1]))
+	{
+	    $isMin = $args[1];
+	}
 
-        if (isset($args[2])) {
-            $version = $args[2];
-        }
+	if (isset($args[2]))
+	{
+	    $version = $args[2];
+	}
 
-        switch ($mode) {
-            case 'Bootstrap':
-                if ($useCdn) {
-                    return $this->$action(sprintf('//maxcdn.bootstrapcdn.com/bootstrap/%s/js/bootstrap.%sjs', $version ?: self::VERSION_BOOTSTRAP, $isMin ? 'min.' : ''));
-                } else {
-                    return $this->$action(sprintf('%s/bootstrap/dist/js/bootstrap.%sjs', $basePath, $isMin ? 'min.' : ''));
-                }
-            case 'Jquery':
-                if ($useCdn) {
-                    return $this->$action(sprintf('//code.jquery.com/jquery-%s.%sjs', $version ?: self::VERSION_JQUERY, $isMin ? 'min.' : ''));
-                } else {
-                    return $this->$action(sprintf('%s/jquery/dist/jquery.%sjs', $basePath, $isMin ? 'min.' : ''));
-                }
-        }
+	
+	switch ($mode)
+	{
+	    case 'Bootstrap':
+		if ($useCdn)
+		{
+		    return $this->$action(sprintf('//maxcdn.bootstrapcdn.com/bootstrap/%s/js/bootstrap.%sjs', $version ? : self::VERSION_BOOTSTRAP, $isMin ? 'min.' : ''));
+		}
+		else
+		{
+		    return $this->$action(sprintf('%s/bootstrap/' . self::VERSION_BOOTSTRAP . '/js/bootstrap.%sjs', $basePath, $isMin ? 'min.' : ''));
+		}
+	    case 'Jquery':
+		if ($useCdn)
+		{
+		    return $this->$action(sprintf('//code.jquery.com/jquery-%s.%sjs', $version ? : self::VERSION_JQUERY, $isMin ? 'min.' : ''));
+		}
+		else
+		{
+		    return $this->$action(sprintf('%s/jquery/jquery.min.js', $basePath, $isMin ? 'min.' : ''));
+		}
+	}
 
-        return false;
+	return false;
     }
 
     /**
@@ -100,42 +115,51 @@ class HeadScript extends ZfHeadScript
      */
     private function callWithoutCdn($matches, $basePath, $args)
     {
-        $action = $matches['action'];
-        $mode = $matches['mode'];
+	$action = $matches['action'];
+	$mode = $matches['mode'];
 
-        $action .= "File";
+	$action .= "File";
 
-        $langs = [];
-        $isMin = true;
+	$langs = [];
+	$isMin = true;
 
-        if (isset($args[0]) && is_bool($args[0])) {
-            $isMin = $args[0];
-        } elseif (isset($args[0])) {
-            $langs = $args[0];
-        }
+	if (isset($args[0]) && is_bool($args[0]))
+	{
+	    $isMin = $args[0];
+	}
+	elseif (isset($args[0]))
+	{
+	    $langs = $args[0];
+	}
 
-        if (isset($args[1]) && is_bool($args[1])) {
-            $isMin = $args[1];
-        }
+	if (isset($args[1]) && is_bool($args[1]))
+	{
+	    $isMin = $args[1];
+	}
 
-        switch ($mode) {
-            case 'Chosen':
-                return $this->$action(sprintf('%s/chosen/chosen.jquery.%sjs', $basePath, $isMin ? 'min.' : ''));
+	switch ($mode)
+	{
+	    case 'Chosen':
+		return $this->$action(sprintf('%s/chosen/chosen.jquery.%sjs', $basePath, $isMin ? 'min.' : ''));
 
-            case 'Moment':
-                if (in_array('*', $langs)) {
-                    $ret = $this->$action(sprintf('%s/moment/min/moment-with-locales.%sjs', $basePath, $isMin ? 'min.' : ''));
-                } else {
-                    $ret = $this->$action(sprintf('%s/moment/%smoment.%sjs', $basePath, $isMin ? 'min/' : '', $isMin ? 'min.' : ''));
-                    foreach ($langs as $lang) {
-                        $ret = $ret->$action(sprintf('%s/moment/%slocale/%s.%sjs', $basePath, $isMin ? 'min/' : '', $lang, $isMin ? 'min.' : ''));
-                    }
-                }
+	    case 'Moment':
+		if (in_array('*', $langs))
+		{
+		    $ret = $this->$action(sprintf('%s/moment/min/moment-with-locales.%sjs', $basePath, $isMin ? 'min.' : ''));
+		}
+		else
+		{
+		    $ret = $this->$action(sprintf('%s/moment/%smoment.%sjs', $basePath, $isMin ? 'min/' : '', $isMin ? 'min.' : ''));
+		    foreach ($langs as $lang)
+		    {
+			$ret = $ret->$action(sprintf('%s/moment/%slocale/%s.%sjs', $basePath, $isMin ? 'min/' : '', $lang, $isMin ? 'min.' : ''));
+		    }
+		}
 
-                return $ret;
-        }
+		return $ret;
+	}
 
-        return false;
+	return false;
     }
 
     /**
@@ -150,19 +174,24 @@ class HeadScript extends ZfHeadScript
      */
     public function __call($method, $args)
     {
-        $basePath = '';
-        if (method_exists($this->view, 'plugin')) {
-            $basePath = $this->view->plugin('basepath')->__invoke();
-        }
+	$basePath = '';
+	if (method_exists($this->view, 'plugin'))
+	{
+	    $basePath = $this->view->plugin('basepath')->__invoke();
+	}
 
-        $ret = false;
+	$ret = false;
 
-        if (preg_match('/^(?P<action>(ap|pre)pend)(?P<mode>Bootstrap|Jquery)$/', $method, $matches)) {
-            $ret = $this->callWithCdn($matches, $basePath, $args);
-        } elseif (preg_match('/^(?P<action>(ap|pre)pend)(?P<mode>Chosen|Moment)$/', $method, $matches)) {
-            $ret = $this->callWithoutCdn($matches, $basePath, $args);
-        }
+	if (preg_match('/^(?P<action>(ap|pre)pend)(?P<mode>Bootstrap|Jquery)$/', $method, $matches))
+	{
+	    $ret = $this->callWithCdn($matches, $basePath, $args);
+	}
+	elseif (preg_match('/^(?P<action>(ap|pre)pend)(?P<mode>Chosen|Moment)$/', $method, $matches))
+	{
+	    $ret = $this->callWithoutCdn($matches, $basePath, $args);
+	}
 
-        return ($ret !== false) ? $ret : parent::__call($method, $args);
+	return ($ret !== false) ? $ret : parent::__call($method, $args);
     }
+
 }

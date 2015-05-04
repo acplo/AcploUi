@@ -46,7 +46,7 @@ For composer documentation, please refer to [getcomposer.org](http://getcomposer
   2. Enable it in your config/application.config.php like the step 4 in the previous section.
   
 ## Usage
-This module provides two main View Helpers: LosHeadLink and LosHeadScript. You can safely replace the default ZF HeadLink and HeadScript with this ones to use their resources.
+This module provides two main View Helpers: AcploHeadLink and AcploHeadScript. You can safely replace the default ZF HeadLink and HeadScript with this ones to use their resources.
 
 ### Jquery
 Jquery is provided as local files (default) or with CDN. Just pass "true" to the appendJquery method to use the CDN files.
@@ -94,7 +94,7 @@ The last call will generate the following html:
 <link type="text/css" rel="stylesheet" media="screen" href="/fontawesome/css/font-awesome.min.css">
 ``` 
 
-To use their icon is simple, just use the LosIcon View Helper:
+To use their icon is simple, just use the AcploIcon View Helper:
 ```php
 <?= $this->acploIcon('fa-user') ?>
 ```
@@ -347,7 +347,7 @@ If you want the dismissible alert just call:
 ```
 
 #### Icons
-To use their icon is simple, just use the LosIcon View Helper:
+To use their icon is simple, just use the AcploIcon View Helper:
 ```php
 <?= $this->acploIcon('glyphicon-user') ?>
 ```
